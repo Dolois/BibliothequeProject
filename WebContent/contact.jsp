@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@ page import="biblio.LivresClass" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -11,16 +10,15 @@
 
   <body>
   	<jsp:include page="logo.html"></jsp:include>
-
-	<div id="nav">
-	   <ul>
-	   		<li><a href=livre.jsp>Nos Livres</a></li>
-	   		<li><a href=contact.jsp>Contactez-nous !</a></li>
-	     	<li><a href=inscription.jsp>Inscrivez-vous !</a></li>
-	   </ul>
-	   <div class="clear"> </div>
-	</div>
   	
+	</br>
+	<div style="display: flex;">
+	   <div><h3><a href=livre.jsp>Nos Livres</a></h3></div>&nbsp;&nbsp;
+	   <div><h3><a href=contact.jsp>Contactez-nous !</a></h3></div>&nbsp;&nbsp;
+	   <div><h3><a href=inscription.jsp>Inscrivez-vous !</a></h3></div>
+	</div>
+  	</br>
+    
     <form action="contactSave.jsp">            
     	<table>
         	<tr>	<td>Name:</td>		<td><input type="text" name="nom"></td>			</tr>

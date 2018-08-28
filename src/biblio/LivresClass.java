@@ -17,7 +17,7 @@ public class LivresClass
 		// déclarations de variables de connection
 		Connection cn = null;
 		
-		String url  = "jdbc:mysql://localhost/cinema?autoReconnect=true&useSSL=false";
+		String url  = "jdbc:mysql://localhost/Bibliotheque?autoReconnect=true&useSSL=false";
 		String user = "root";
 		String pwd  = "Dauphyn1";
 

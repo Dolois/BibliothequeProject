@@ -6,3 +6,4 @@ VALUES
 ('Le vilain petit canard', 'LeFadi', 'Simplon'),
 ('Le Vilain, La Brute et le Truand','Victor Hugo', 'JC Laccès'),
 ('Tirlipinpon','Pompidou','Simplon');
+
