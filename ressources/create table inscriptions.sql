@@ -5,6 +5,6 @@ CREATE TABLE inscriptions (
 	prenom VARCHAR(60),
 	email VARCHAR(80),
 	password VARCHAR(50)
-) ;
+);
 
 

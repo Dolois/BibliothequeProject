@@ -10,35 +10,27 @@
 </head>
 
   <body>
-    <h1> Bienvenue a Simplon.Bibio !</h1>           
+  	<jsp:include page="logo.html"></jsp:include>
 
-    <marquee dir="ltr"><font style="color: navy;">The Best Team Pierre - Dominick</font></marquee>
+	<div id="nav">
+	   <ul>
+	   		<li><a href=livre.jsp>Nos Livres</a></li>
+	   		<li><a href=contact.jsp>Contactez-nous !</a></li>
+	     	<li><a href=inscription.jsp>Inscrivez-vous !</a></li>
+	   </ul>
+	   <div class="clear"> </div>
+	</div>
   	
     <form action="contactSave.jsp">            
-      <table>
-        <tr>
-          <td>Name:</td>
-          <td><input type="text" name="nom"></td>
-        </tr>
-        <tr>
-          <td>Prenom:</td>
-          <td><input type="text" name="prenom"></td>
-        </tr>
-        <tr>
-          <td>Email:</td>
-          <td><input type="text" name="email"></td>
-        </tr>
-        <tr>
-          <td>Telephone:</td>
-          <td><input type="text" name="telephone"></td>
-        </tr>
-        <tr>
-          <td><input type="submit" value="Submit"></td>
-        </tr>
-      </table>            
+    	<table>
+        	<tr>	<td>Name:</td>		<td><input type="text" name="nom"></td>			</tr>
+        	<tr>	<td>Prenom:</td>	<td><input type="text" name="prenom"></td>		</tr>
+        	<tr>	<td>Email:</td>		<td><input type="text" name="email"></td>		</tr>
+        	<tr>	<td>Telephone:</td>	<td><input type="text" name="telephone"></td>	</tr>
+        	
+        	<tr>	<td><input type="submit" value="Submit"></td>						</tr>
+		</table>            
     </form>
-    
-    <h3><a href=inscription.jsp>Inscriptions</a></h3>
     
     <jsp:include page="footer.html"></jsp:include>
             

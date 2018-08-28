@@ -7,30 +7,26 @@
 </head>
 
   <body>
-    <h1>Les inscriptions sont ouvertes !</h1>
+    <jsp:include page="logo.html"></jsp:include>
+	
+	<div id="nav">
+	   <ul>
+	   		<li><a href=livre.jsp>Nos Livres</a></li>
+	   		<li><a href=contact.jsp>Contactez-nous !</a></li>
+	     	<li><a href=inscription.jsp>Inscrivez-vous !</a></li>
+	   </ul>
+	   <div class="clear"> </div>
+	</div>
     
-        <form action="inscriptionSave.jsp">            
-      <table>
-        <tr>
-          <td>Name:</td>
-          <td><input type="text" name="name"></td>
-        </tr>
-        <tr>
-          <td>Prenom:</td>
-          <td><input type="text" name="prenom"></td>
-        </tr>
-        <tr>
-          <td>Email:</td>
-          <td><input type="text" name="email"></td>
-        </tr>
-        <tr>
-          <td>Password:</td>
-          <td><input type="password" name="password"></td>
-        </tr>
-        <tr>
-          <td><input type="submit" value="Submit"></td>
-        </tr>
-      </table>            
+    <form action="inscriptionSave.jsp">            
+		<table>
+			<tr>	<td>Nom:</td>		<td><input type="text" name="nom"></td>				</tr>
+			<tr>	<td>Prenom:</td>	<td><input type="text" name="prenom"></td>			</tr>
+			<tr>	<td>Email:</td>		<td><input type="text" name="email"></td>			</tr>
+			<tr>	<td>Password:</td>	<td><input type="password" name="password"></td>	</tr>
+			
+			<tr>	<td><input type="submit" value="Submit"></td>							</tr>
+		</table>            
     </form>
     
     <jsp:include page="footer.html"></jsp:include>
