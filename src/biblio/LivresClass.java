@@ -24,7 +24,7 @@ public class LivresClass
 		// récupération du driver (chemin du driver de jdbc)
 		try
 		{
-			// lancement du driver
+			// charge et lance le driver
 			Class.forName("com.mysql.jdbc.Driver");
 			System.out.println(".Driver Ok");
 			

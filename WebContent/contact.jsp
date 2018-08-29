@@ -10,7 +10,7 @@
 
   <body>
   	<jsp:include page="logo.html"></jsp:include>
-  	
+  	<HR>
 	</br>
 	<div style="display: flex;">
 	   <div><h3><a href=livre.jsp>Nos Livres</a></h3></div>&nbsp;&nbsp;
@@ -18,7 +18,7 @@
 	   <div><h3><a href=inscription.jsp>Inscrivez-vous !</a></h3></div>
 	</div>
   	</br>
-    
+    <HR>
     <form action="contactSave.jsp">            
     	<table>
         	<tr>	<td>Name:</td>		<td><input type="text" name="nom"></td>			</tr>
