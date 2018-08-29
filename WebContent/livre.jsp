@@ -18,35 +18,35 @@
 <%
 	try
 	{
-		// 1ère phase - Charger le driver
+		// 1Ã¨re phase - Charger le driver
 		Class.forName("com.mysql.jdbc.Driver");
 		String url = "jdbc:mysql://localhost/Bibliotheque";
 		String user = "root";
 		String pwd = "Dauphyn1";
 	
-		// 2ème phase - Connection à notre base de données users
+		// 2Ã¨me phase - Connection Ã  notre base de donnÃ©es Bibliotheque
 		Connection cn = (Connection) DriverManager.getConnection(url, user, pwd);
 	
-		// 3ème phase - création d'une instance nommée st
+		// 3Ã¨me phase - crÃ©ation d'une instance nommÃ©e st
 		// de la classe Statement
 		Statement st = (Statement) cn.createStatement();
 	
-		// Création de la requête SQL
+		// CrÃ©ation de la requÃªte SQL
 		String sql = "SELECT * FROM livres";
 		
-		// 4ème phase - Exécution de la requête SQL
+		// 4Ã¨me phase - ExÃ©cution de la requÃªte SQL
 		ResultSet result = (ResultSet) st.executeQuery(sql);
 		
-		// Création d'une ArrayList de type Livre
+		// CrÃ©ation d'une ArrayList de type LivresModel
 		ArrayList<LivresModel> ListeLivre = new ArrayList<LivresModel>();
 		
 		while (result.next())
 		{
-			// création d'une instance nommée l de la classe LivresModel
+			// crÃ©ation d'une instance nommÃ©e l de la classe LivresModel
 			LivresModel l = new LivresModel();
 			
 			// affectation de nos valeur de notre objet result
-			// provenant de la base de données personne
+			// provenant de la base de donnÃ©es Bibliotheque
 			l.setTitre(result.getString("titre"));
 			l.setAuteur(result.getString("auteur"));
 			l.setEditeur(result.getString("editeur"));
