@@ -56,7 +56,7 @@
 		}
 			
 		// Afficher tous le contenu de l'ArrayList
-		out.print("<ol>");
+		out.print("<h3><ol>");
 		for (int i = 0; i < ListeLivre.size(); i++)
 		{
 			out.print("<li>" + ListeLivre.get(i).getTitre());
@@ -66,7 +66,7 @@
 			out.println(ListeLivre.get(i).getEditeur());
 			out.print("</li>");
 		}
-		out.print("</ol>");
+		out.print("</ol></h3>");
 	}
 	catch (ClassNotFoundException e)
 	{
