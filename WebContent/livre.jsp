@@ -18,38 +18,39 @@
 <%
 	try
 	{
-		// 1ère phase - Charger le driver
+		// 1ere phase - Charger le driver
 		Class.forName("com.mysql.jdbc.Driver");
 		String url = "jdbc:mysql://localhost/Bibliotheque";
 		String user = "root";
 		String pwd = "Dauphyn1";
 	
-		// 2ème phase - Connection à notre base de données Bibliotheque
+		// 2eme phase - Connection a notre base de donnees Bibliotheque
 		Connection cn = (Connection) DriverManager.getConnection(url, user, pwd);
 	
-		// 3ème phase - création d'une instance nommée st
+		// 3eme phase - creation d'une instance nommee st
 		// de la classe Statement
 		Statement st = (Statement) cn.createStatement();
 	
-		// Création de la requête SQL
+		// Creation de la requete SQL
 		String sql = "SELECT * FROM livres";
 		
-		// 4ème phase - Exécution de la requête SQL
+		// 4eme phase - Execution de la requete SQL
 		ResultSet result = (ResultSet) st.executeQuery(sql);
 		
-		// Création d'une ArrayList de type LivresModel
+		// Creation d'une ArrayList de type LivresModel
 		ArrayList<LivresModel> ListeLivre = new ArrayList<LivresModel>();
 		
 		while (result.next())
 		{
-			// création d'une instance nommée l de la classe LivresModel
+			// creation d'une instance nommee l de la classe LivresModel
 			LivresModel l = new LivresModel();
 			
 			// affectation de nos valeur de notre objet result
-			// provenant de la base de données Bibliotheque
+			// provenant de la base de donnees Bibliotheque
 			l.setTitre(result.getString("titre"));
 			l.setAuteur(result.getString("auteur"));
 			l.setEditeur(result.getString("editeur"));
+			l.setUrl(result.getString("url"));
 			
 			// ajouter dans l'ArrayList 
 			ListeLivre.add(l);
@@ -59,7 +60,9 @@
 		out.print("<h3><ol>");
 		for (int i = 0; i < ListeLivre.size(); i++)
 		{
-			out.print("<li>" + ListeLivre.get(i).getTitre());
+			out.print("<li>");
+			out.print("<a href=\"" + ListeLivre.get(i).getUrl() + "\"" + ">");
+			out.print(ListeLivre.get(i).getTitre());
 			out.print(" ");
 			out.print(ListeLivre.get(i).getAuteur());
 			out.print(" ");

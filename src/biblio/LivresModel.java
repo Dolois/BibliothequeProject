@@ -6,6 +6,8 @@ public class LivresModel
 	String titre;
 	String auteur;
 	String editeur;
+	String url;
+	
 	public int getIdLivre() {
 		return idLivre;
 	}
@@ -32,5 +34,12 @@ public class LivresModel
 	}
 	public void setEditeur(String editeur) {
 		this.editeur = editeur;
+	}
+	
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
 	}
 }
