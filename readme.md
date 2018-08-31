@@ -1,38 +1,24 @@
-## Création : Projet Web Dynamique
+## Réalisation d'un Projet Web Dynamique
 
-CREATE DATABASE Bibliotheque ;
+#### Création d'une DATABASE Bibliotheque
 
-footer.html
-logo.jpg
+#### Création d'une TABLE livres
+#### Création d'une TABLE contacts
+#### Création d'une TABLE inscriptions
 
-CREATE DATABASE Bibliotheque ;
+#### Créations des insertions dans la table livres
 
-USE Bibliotheque ;
+#### création d'un fichier logo.html
+#### création d'un fichier footer.html
+#### création d'un fichier contact.jsp (page jsp d'accueil, formulaire)
+#### création d'un fichier inscription.jsp (formulaire)
+#### création d'un fichier contactSave.jsp (sauvegardes des données dans la table contacts)
+#### création d'un fichier inscriptionSave.jsp (sauvegardes des données dans la table inscriptions)
+#### création d'un fichier livres.jsp (liste de tous les livres de la table livres)
 
-CREATE TABLE livres (
-	id_livre INT NOT NULL AUTO_INCREMENT,
-	titre VARCHAR(60),
-	auteur VARCHAR(50),
-	editeur VARCHAR(60)
-	PRIMARY KEY ( id_livre )
-);
+### 1) Lister tous les livres de la table livres
 
-Lister tous les livres de la table livres
+### 2) créer un formulaire contacts (gérer les inserts)
 
-CREATE TABLE contacts (
-	nom VARCHAR(60),
-	prenom VARCHAR(60),
-	email VARCHAR(80),
-	telephone VARCHAR(20)
-);
+### 3) créer un formulaire inscriptions (gérer les inserts)
 
-Formulaire contacts (insert)
-
-CREATE TABLE inscriptions (
-	nom VARCHAR(60),
-	prenom VARCHAR(60),
-	email VARCHAR(80),
-	password VARCHAR(50)
-);
-
-Formulaire inscriptions (insert)
