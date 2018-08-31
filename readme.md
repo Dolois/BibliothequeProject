@@ -4,33 +4,17 @@
 
 #### USE Bibliotheque ;
 
-#### CREATE TABLE livres (
-####	id_livre INT NOT NULL AUTO_INCREMENT,
-####	titre VARCHAR(60),
-####	auteur VARCHAR(50),
-####	editeur VARCHAR(60)
-####	PRIMARY KEY ( id_livre )
-####);
+#### CREATE TABLE livres
 
-#### 1ère tache : Lister tous les livres de la table livres
+### 1ère tache : Lister tous les livres de la table livres
 
-CREATE TABLE contacts (
-	nom VARCHAR(60),
-	prenom VARCHAR(60),
-	email VARCHAR(80),
-	telephone VARCHAR(20)
-);
+#### CREATE TABLE contacts
 
-#### 2ème tache : créer un formulaire contacts (gérer les inserts)
+### 2ème tache : créer un formulaire contacts (gérer les inserts)
 
-CREATE TABLE inscriptions (
-	nom VARCHAR(60),
-	prenom VARCHAR(60),
-	email VARCHAR(80),
-	password VARCHAR(50)
-);
+#### CREATE TABLE inscriptions
 
-#### 3ème tache : créer un formulaire inscriptions (gérer les inserts)
+### 3ème tache : créer un formulaire inscriptions (gérer les inserts)
 
 #### création d'un fichier logo.html
 #### création d'un fichier footer.html
