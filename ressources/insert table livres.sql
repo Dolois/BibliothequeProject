@@ -5,5 +5,5 @@ VALUES
 ('Da Vinci COE', 'Dan Brown', 'Gallimard'),
 ('Le vilain petit canard', 'LeFadi', 'Simplon'),
 ('Le Bon, La Brute et le Truand','Sergio Leone', 'Gallimard'),
-('Tirlipinpon','Pompidou','Simplon');
+('Tirlipimpon','Pompidou','Club Dorothée');
 
